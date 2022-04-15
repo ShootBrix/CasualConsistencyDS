@@ -1,5 +1,5 @@
 /*
- * Dmitri Gordienko
+ * Dmitri Gordienko 
  * CMPSC 497 Lab 2
  * Enforcing Casual Consistency in Distributed System 
  */
@@ -19,7 +19,7 @@ public class CasualConsistency {
      * @throws java.io.IOException
      */
     public static void main(String[] args) throws IOException {
-        
+        System.out.println("WELCOM USER, do you want to run a Server or a Client?\n");
         System.out.println("Enter your choice:");
         System.out.println("1. Run as Server");
         System.out.println("2. Run as Client");
@@ -45,5 +45,5 @@ public class CasualConsistency {
        } else {
         System.out.println("Incorrect input. Program Stopped");
        }
-    }
+    }// main()
 }

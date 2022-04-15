@@ -15,7 +15,7 @@ public class Client {
 
     public Client() throws IOException {
 
-        System.out.println("Welcome Client:  what Server port would you like to connect to?");
+        System.out.println("Welcome Client: What Server port would you like to connect to?");
 
         BufferedReader buffRead = new BufferedReader(new InputStreamReader(System.in));
         String choice = buffRead.readLine();
@@ -23,10 +23,9 @@ public class Client {
 
         serverSocket = new Socket("localhost", number);
 
-       // ois = new ObjectInputStream(serverSocket.getInputStream());
         oos = new ObjectOutputStream(serverSocket.getOutputStream());
 
-        System.out.println("Connection has been established with the server");
+        System.out.println("Connection has been established with the server on port: " + number);
     }
 
     public void run() {
